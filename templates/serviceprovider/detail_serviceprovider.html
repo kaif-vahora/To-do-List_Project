@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block container %}
+<div class = 'card'>
+    <div class='card-header'>
+        <h5 class = "class-title">service_provider Details #{{book.id}}</h5>
+    </div>
+    <div class='card-body'>
+    <dl class='raw'>
+        <dt class='col-sm-3'>Service_Provider Name</dt>
+        <dd class='col-sm-9'>{{ serviceprovider.name}}</dd>
+        
+        <dt class='col-sm-3'>Service_Provider Description</dt>
+        <dd class='col-sm-9'>{{ serviceprovider.description}}</dd>
+        
+        <dt class='col-sm-3'>Service_Provider Email</dt>
+        <dd class='col-sm-9'>{{ serviceprovider.email}}</dd>
+    </dl>
+    </div>
+</div>
+{% endblock %}
